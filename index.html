@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>أحمد وليد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+  background-image: url('image/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+    .section { display: none; }
+    .active-section { display: block; }
+    .work-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: white;
+      padding: 5px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .work-img:hover {
+      transform: scale(1.05);
+    }
+    .inner-img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      margin: 15px auto;
+      display: block;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .inner-img:hover {
+      transform: scale(1.02);
+    }
+    .section-title {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .btn-back {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .btn-back:hover {
+      background-color: #222;
+    }
+    p { color: #000 !important; font-weight: bold; }
+  </style>
+</head>
+<body class="text-center p-3">
+
+<!-- الصفحة الرئيسية -->
+<div id="home" class="section active-section">
+  <div class="content-box">
+    <h1 class="mb-3">Ahmed Waled</h1>
+    <p>Furniture design engineer specializing in kitchens, wardrobes, and dressing rooms.</p>
+    <div class="social-icons my-4">
+      <a href="https://wa.me/201020838009?" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1FYxdf5vR6/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ahmed777walid?igsh=MW81bG9tMXNxZnZ6ZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ahmedwalid4530?_t=ZS-8xTEBDKPeS7&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <div onclick="showSection('work')" style="cursor: pointer; text-align: center;">
+      <img src="image/q.jpg" alt="الشغل" class="work-img">
+      <p class="mt-2">My Work</p>
+    </div>
+
+        <!-- زرار CV على شكل صورة -->
+    <div onclick="window.open('image/cv.pdf', '_blank')" style="cursor: pointer; text-align: center; margin-top: 20px;">
+    <img src="image/profial.jpeg" alt="السيرة الذاتية" class="work-img">
+    <p class="mt-2">CV</p>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- صفحة الشغل -->
+<div id="work" class="section">
+  <div class="content-box">
+    <h2 class="section-title">اعمالي</h2>
+    <div class="d-flex justify-content-center flex-wrap gap-4">
+
+      <div onclick="showSection('dressing')" style="cursor: pointer; text-align: center;">
+        <img src="dresing/62.jpg" alt="دريسنج" class="work-img">
+        <p class="mt-2">DRESSING</p>
+      </div>
+
+      <div onclick="showSection('kitchen')" style="cursor: pointer; text-align: center;">
+        <img src="kitchen/11.jpeg" alt="مطبخ" class="work-img">
+        <p class="mt-2">KITCHEN</p>
+      </div>
+
+      <div onclick="showSection('children')" style="cursor: pointer; text-align: center;">
+        <img src="children room/2.jpeg" alt="غرف أطفال" class="work-img">
+        <p class="mt-2">CHILDREN ROOM</p>
+      </div>
+
+      <div onclick="showSection('master')" style="cursor: pointer; text-align: center;">
+        <img src="master room/1.jpeg" alt="ماستر روم" class="work-img">
+        <p class="mt-2">MASTER ROOM</p>
+      </div>
+
+      <div onclick="showSection('antereh')" style="cursor: pointer; text-align: center;">
+        <img src="انتريهات/1.jpg" alt="أنتريهات" class="work-img">
+        <p class="mt-2">أنتريهات</p>
+      </div>
+
+      <div onclick="showSection('tajleed')" style="cursor: pointer; text-align: center;">
+        <img src="تجاليد/1.jpg" alt="تجاليد" class="work-img">
+        <p class="mt-2">تجاليد</p>
+      </div>
+
+      <div onclick="showSection('finishing')" style="cursor: pointer; text-align: center;">
+        <img src="تشطيبات الشقق/1.jpeg" alt="تشطيبات الشقق" class="work-img">
+        <p class="mt-2">تشطيبات الشقق</p>
+      </div>
+
+      <div onclick="showSection('entrance')" style="cursor: pointer; text-align: center;">
+        <img src="مدخل الشقه/1.jpeg" alt="مدخل الشقة" class="work-img">
+        <p class="mt-2">مدخل الشقة</p>
+      </div>
+
+      <div onclick="showSection('bathroom')" style="cursor: pointer; text-align: center;">
+        <img src="وحدات حمام/15.jpg" alt="وحدات حمام" class="work-img">
+        <p class="mt-2">وحدات حمام</p>
+      </div>
+
+      <div onclick="showSection('sofra')" style="cursor: pointer; text-align: center;">
+        <img src="سفره/2.jpeg" alt="سفره" class="work-img">
+        <p class="mt-2">DINNING ROOM</p>
+      </div>
+
+    </div>
+    <button class="btn-back mt-5" onclick="showSection('home')">رجوع</button>
+  </div>
+</div>
+
+<!-- صفحات الأقسام -->
+
+
+<div id="dressing" class="section">
+  <div class="content-box">
+    <h3>أعمال دريسنج</h3>
+    <img src="dresing/25.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/26.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/27.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/28.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/29.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/30.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/35.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/36.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/37.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/38.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/39.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/40.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/41.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/42.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/43.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/44.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/45.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/46.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/47.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/48.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/49.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/50.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/51.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/52.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/53.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/54.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/55.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/56.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/57.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/58.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/60.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/61.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/62.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/63.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/64.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/65.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/66.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/67.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/68.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/69.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/70.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/71.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/72.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/73.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/74.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/75.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/76.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/77.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/78.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/79.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/80.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/81.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/82.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/83.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/84.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/85.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/86.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/87.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/88.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/89.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/90.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/91.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/92.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/93.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/94.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/95.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/96.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/97.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/98.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/99.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/100.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/101.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/102.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/103.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/104.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/105.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/106.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/107.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/108.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/109.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/110.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/111.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/112.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/113.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/114.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/115.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/116.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/117.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/118.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/119.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/120.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/121.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/122.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/123.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/124.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/125.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/126.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/127.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/128.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/129.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/130.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/131.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/134.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/135.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/136.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/137.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/138.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/139.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/140.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/141.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/142.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/143.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/144.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/145.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/146.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/147.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/148.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/149.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/150.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/151.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/152.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/153.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/8471e9c5-b6b0-43ad-a391-f24c04062015.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/46546cbc-e088-4926-9c91-a9481cb20a5f.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/b4b5d3f9-c471-4e20-8214-66071c5e34c7.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/c1523f31-361b-4f7e-b6a4-bfd0394c6d86.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/1.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/2.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/3.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/4.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/4a543951-3bad-4e28-83d7-17fa3a0864b7.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/5.png" class="inner-img" alt="دريسنج">
+<img src="dresing/6.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/7.png" class="inner-img" alt="دريسنج">
+<img src="dresing/8.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/8b3db282-ea26-4f49-993f-3c1322eb5bae.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/9.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/10.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/11.jpg" class="inner-img" alt="دريسنج">
+<img src="dresing/12.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/13.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/14.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/15.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/16.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/17.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/18.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/19.png" class="inner-img" alt="دريسنج">
+<img src="dresing/20.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/21.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/22.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/23.jpeg" class="inner-img" alt="دريسنج">
+<img src="dresing/24.jpeg" class="inner-img" alt="دريسنج">
+
+
+    
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="kitchen" class="section">
+  <div class="content-box">
+    <h3>أعمال المطبخ</h3>
+    <img src="kitchen/28.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/29.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/30.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/31.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/32.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/33.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/34.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/35.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/36.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/37.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/38.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/39.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/40.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/41.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/42.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/43.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/44.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/45.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/1.png" class="inner-img" alt="مطبخ">
+<img src="kitchen/2.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/3.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/4.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/5.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/6.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/7.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/8.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/9.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/10.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/11.jpeg" class="inner-img" alt="مطبخ">
+<img src="kitchen/12.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/13.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/14.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/15.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/16.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/17.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/18.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/19.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/20.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/21.png" class="inner-img" alt="مطبخ">
+<img src="kitchen/22.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/23.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/24.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/25.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/26.jpg" class="inner-img" alt="مطبخ">
+<img src="kitchen/27.jpg" class="inner-img" alt="مطبخ">
+
+
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="children" class="section">
+  <div class="content-box">
+    <h3>غرف الأطفال</h3>
+    <img src="children room/15.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/16.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/17.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/18.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/19.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/20.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/21.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/1.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/2.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/3.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/4.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/5.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/6.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/7.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/8.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/9.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/10.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/11.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/12.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/13.jpeg" class="inner-img" alt="أطفال">
+<img src="children room/14.jpeg" class="inner-img" alt="أطفال">
+
+
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="master" class="section">
+  <div class="content-box">
+    <h3>ماستر روم</h3>
+    <img src="master room/1.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/2.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/3.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/4.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/5.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/6.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/7.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/8.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/9.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/10.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/11.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/12.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/13.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/14.jpeg" class="inner-img" alt="ماستر روم">
+<img src="master room/15.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/16.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/17.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/18.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/19.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/20.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/21.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/22.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/23.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/24.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/25.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/26.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/27.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/28.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/29.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/30.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/31.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/32.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/33.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/34.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/35.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/36.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/37.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/38.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/39.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/40.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/41.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/42.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/43.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/44.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/45.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/46.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/47.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/48.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/49.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/50.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/51.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/52.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/53.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/54.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/55.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/56.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/57.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/58.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/59.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/60.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/61.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/62.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/63.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/64.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/65.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/66.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/67.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/68.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/69.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/70.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/71.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/72.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/73.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/74.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/75.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/76.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/77.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/78.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/79.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/80.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/81.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/82.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/83.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/84.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/85.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/86.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/87.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/88.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/89.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/90.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/91.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/92.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/93.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/94.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/95.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/96.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/97.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/98.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/99.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/100.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/101.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/102.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/103.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/104.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/105.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/106.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/107.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/108.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/109.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/110.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/111.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/112.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/113.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/114.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/115.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/116.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/117.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/118.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/119.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/120.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/121.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/122.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/123.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/124.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/125.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/126.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/127.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/128.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/129.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/130.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/131.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/132.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/133.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/134.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/135.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/136.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/137.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/138.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/139.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/140.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/141.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/142.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/143.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/144.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/145.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/146.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/147.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/148.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/149.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/150.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/151.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/152.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/153.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/154.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/155.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/156.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/157.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/158.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/159.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/160.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/161.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/162.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/163.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/164.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/165.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/166.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/167.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/168.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/169.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/170.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/171.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/172.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/173.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/174.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/175.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/176.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/177.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/178.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/179.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/180.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/181.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/182.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/183.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/184.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/185.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/186.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/187.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/188.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/189.jpg" class="inner-img" alt="ماستر روم">
+<img src="master room/190.jpg" class="inner-img" alt="ماستر روم">
+
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="antereh" class="section">
+  <div class="content-box">
+    <h3>أنتريهات</h3>
+    <img src="انتريهات/117.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/118.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/119.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/120.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/121.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/122.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/123.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/124.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/125.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/126.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/127.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/128.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/129.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/130.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/131.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/132.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/133.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/134.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/135.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/136.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/137.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/138.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/139.png" class="inner-img" alt="أنتريه">
+<img src="انتريهات/143.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/144.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/145.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/146.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/147.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/149.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/1.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/5.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/6.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/7.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/8.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/9.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/10.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/12.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/13.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/14.jpeg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/15.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/16.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/17.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/18.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/19.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/20.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/21.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/22.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/23.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/24.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/25.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/26.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/27.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/28.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/29.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/30.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/31.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/32.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/33.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/34.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/35.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/36.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/37.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/38.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/39.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/40.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/41.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/42.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/43.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/44.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/45.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/46.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/47.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/48.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/49.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/50.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/51.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/52.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/53.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/54.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/55.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/56.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/57.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/58.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/59.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/60.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/61.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/62.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/63.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/64.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/65.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/66.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/67.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/68.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/69.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/70.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/71.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/72.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/73.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/74.jpg" class="inner-img" alt="أنتريه">
+<img src="انتريهات/75.jpg" class="inner-img" alt="أنتريه">
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="tajleed" class="section">
+  <div class="content-box">
+    <h3>تجاليد</h3>
+    <img src="تجاليد/1.jpg" class="inner-img" alt="تجاليد">
+<img src="تجاليد/2.jpg" class="inner-img" alt="تجاليد">
+<img src="تجاليد/3.jpg" class="inner-img" alt="تجاليد">
+<img src="تجاليد/4.jpg" class="inner-img" alt="تجاليد">
+<img src="تجاليد/5.jpg" class="inner-img" alt="تجاليد">
+<img src="تجاليد/6.jpg" class="inner-img" alt="تجاليد">
+<img src="تجاليد/7.jpg" class="inner-img" alt="تجاليد">
+
+
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="finishing" class="section">
+  <div class="content-box">
+    <h3>تشطيبات الشقق</h3>
+
+
+    <img src="image/finish.jpg" class="inner-img" alt="تشطيب">
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="entrance" class="section">
+  <div class="content-box">
+    <h3>مدخل الشقة</h3>
+    <img src="مدخل الشقه/1.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/2.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/3.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/4.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/5.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/6.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/7.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/8.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/9.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/10.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/11.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/12.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/13.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/14.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/15.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/16.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/17.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/18.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/19.jpeg" class="inner-img" alt="مدخل">
+<img src="مدخل الشقه/20.jpg" class="inner-img" alt="مدخل">
+
+
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+<div id="bathroom" class="section">
+  <div class="content-box">
+    <h3>وحدات حمام</h3>
+    <img src="وحدات حمام/1.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/2.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/3.jpeg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/4.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/5.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/6.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/7.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/8.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/9.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/10.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/11.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/12.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/13.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/14.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/15.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/16.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/17.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/18.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/19.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/20.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/21.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/22.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/23.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/24.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/25.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/26.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/27.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/28.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/29.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/30.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/31.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/32.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/33.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/34.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/35.jpg" class="inner-img" alt="حمام">
+<img src="وحدات حمام/36.jpg" class="inner-img" alt="حمام">
+
+
+    <button class="btn-back" onclick="showSection('work')">رجوع</button>
+  </div>
+</div>
+
+
+
+<div id="sofra" class="section">
+  <div class="content-box">
+    <h3>سفره</h3>
+  
+<img src="سفره/2.jpeg" class="inner-img" alt="سفره">
+<img src="سفره/3.jpeg" class="inner-img" alt="سفره">
+<img src="سفره/4.jpeg" class="inner-img" alt="سفره">
+<img src="سفره/5.jpg" class="inner-img" alt="سفره">
+<img src="سفره/6.jpg" class="inner-img" alt="سفره">
+<img src="سفره/7.jpg" class="inner-img" alt="سفره">
+<img src="سفره/8.jpg" class="inner-img" alt="سفره">
+<img src="سفره/9.jpg" class="inner-img" alt="سفره">
+<img src="سفره/10.jpg" class="inner-img" alt="سفره">
+<img src="سفره/11.jpg" class="inner-img" alt="سفره">
+<img src="سفره/12.jpg" class="inner-img" alt="سفره">
+<img src="سفره/13.jpg" class="inner-img" alt="سفره">
+<img src="سفره/14.jpg" class="inner-img" alt="سفره">
+<img src="سفره/15.jpg" class="inner-img" alt="سفره">
+<img src="سفره/16.jpg" class="inner-img" alt="سفره">
+<img src="سفره/17.jpg" class="inner-img" alt="سفره">
+<img src="سفره/18.jpg" class="inner-img" alt="سفره">
+<img src="سفره/19.jpg" class="inner-img" alt="سفره">
+<img src="سفره/20.jpg" class="inner-img" alt="سفره">
+<img src="سفره/21.jpg" class="inner-img" alt="سفره">
+<img src="سفره/22.jpg" class="inner-img" alt="سفره">
+<img src="سفره/23.jpg" class="inner-img" alt="سفره">
+<img src="سفره/24.jpg" class="inner-img" alt="سفره">
+<img src="سفره/25.jpg" class="inner-img" alt="سفره">
+<img src="سفره/26.jpg" class="inner-img" alt="سفره">
+<img src="سفره/27.jpg" class="inner-img" alt="سفره">
+<img src="سفره/28.jpg" class="inner-img" alt="سفره">
+<img src="سفره/29.jpg" class="inner-img" alt="سفره">
+<img src="سفره/30.jpg" class="inner-img" alt="سفره">
+<img src="سفره/31.jpg" class="inner-img" alt="سفره">
+<img src="سفره/32.jpg" class="inner-img" alt="سفره">
+<img src="سفره/33.jpg" class="inner-img" alt="سفره">
+<img src="سفره/34.jpg" class="inner-img" alt="سفره">
+<img src="سفره/35.jpg" class="inner-img" alt="سفره">
+<img src="سفره/36.jpg" class="inner-img" alt="سفره">
+<img src="سفره/37.jpg" class="inner-img" alt="سفره">
+<img src="سفره/38.jpg" class="inner-img" alt="سفره">
+<img src="سفره/39.jpg" class="inner-img" alt="سفره">
+<img src="سفره/40.jpg" class="inner-img" alt="سفره">
+<img src="سفره/41.jpg" class="inner-img" alt="سفره">
+<img src="سفره/42.jpg" class="inner-img" alt="سفره">
+<img src="سفره/43.jpg" class="inner-img" alt="سفره">
+<img src="سفره/44.jpg" class="inner-img" alt="سفره">
+<img src="سفره/45.jpg" class="inner-img" alt="سفره">
+<img src="سفره/46.jpg" class="inner-img" alt="سفره">
+<img src="سفره/47.jpg" class="inner-img" alt="سفره">
+<img src="سفره/48.jpg" class="inner-img" alt="سفره">
+<img src="سفره/49.jpg" class="inner-img" alt="سفره">
+<img src="سفره/50.jpg" class="inner-img" alt="سفره">
+<img src="سفره/51.jpg" class="inner-img" alt="سفره">
+<img src="سفره/52.jpg" class="inner-img" alt="سفره">
+<img src="سفره/53.jpg" class="inner-img" alt="سفره">
+<img src="سفره/54.jpg" class="inner-img" alt="سفره">
+<img src="سفره/55.jpg" class="inner-img" alt="سفره">
+<img src="سفره/56.jpg" class="inner-img" alt="سفره">
+<img src="سفره/57.jpg" class="inner-img" alt="سفره">
+<img src="سفره/58.jpg" class="inner-img" alt="سفره">
+<img src="سفره/59.jpg" class="inner-img" alt="سفره">
+<img src="سفره/60.jpg" class="inner-img" alt="سفره">
+<img src="سفره/61.jpg" class="inner-img" alt="سفره">
+<img src="سفره/62.jpg" class="inner-img" alt="سفره">
+<img src="سفره/63.jpg" class="inner-img" alt="سفره">
+<img src="سفره/64.jpg" class="inner-img" alt="سفره">
+<img src="سفره/65.jpg" class="inner-img" alt="سفره">
+<img src="سفره/66.jpg" class="inner-img" alt="سفره">
+<img src="سفره/67.jpg" class="inner-img" alt="سفره">
+<img src="سفره/68.jpg" class="inner-img" alt="سفره">
+<img src="سفره/69.jpg" class="inner-img" alt="سفره">
+<img src="سفره/70.jpg" class="inner-img" alt="سفره">
+<img src="سفره/71.jpg" class="inner-img" alt="سفره">
+<img src="سفره/72.jpg" class="inner-img" alt="سفره">
+<img src="سفره/73.jpg" class="inner-img" alt="سفره">
+<img src="سفره/74.jpg" class="inner-img" alt="سفره">
+<img src="سفره/75.jpg" class="inner-img" alt="سفره">
+<img src="سفره/76.jpg" class="inner-img" alt="سفره">
+<img src="سفره/77.jpg" class="inner-img" alt="سفره">
+<img src="سفره/78.jpg" class="inner-img" alt="سفره">
+<img src="سفره/79.jpg" class="inner-img" alt="سفره">
+<img src="سفره/80.jpg" class="inner-img" alt="سفره">
+<img src="سفره/81.jpg" class="inner-img" alt="سفره">
+<img src="سفره/82.jpg" class="inner-img" alt="سفره">
+
+
+    <!-- زر الرجوع دايمًا بالنص أسفل الصفحة -->
+<button class="btn-back" onclick="showSection('work')">رجوع</button>
+
+<style>
+  .btn-back {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  .btn-back:hover {
+    background-color: #555;
+  }
+</style>
+
+  </div>
+</div>
+
+
+
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active-section'));
+    document.getElementById(id).classList.add('active-section');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
